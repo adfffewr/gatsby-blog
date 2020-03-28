@@ -65,7 +65,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Container>
-        <h1>Home</h1>
+        <h1>Post</h1>
         <ol>
           {data.allMarkdownRemark.edges.map(edge => {
             return (

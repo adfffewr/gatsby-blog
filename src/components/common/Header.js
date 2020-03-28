@@ -7,6 +7,11 @@ const HeaderBox = styled.header`
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: rgba(31, 41, 51, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
   a {
     font-size: 0.9rem;
   }
@@ -46,16 +51,16 @@ const Header = () => {
     <>
       <HeaderBox>
         <NavBox>
-          <h1>
+          {/* <h1>
             <Logo to="/">CodingPalette</Logo>
-          </h1>
+          </h1> */}
           <NavListBox>
             <li>
-              <LinkTag to="/">Home</LinkTag>
+              <LinkTag to="/">Post</LinkTag>
             </li>
-            <li>
-              <LinkTag to="#">About</LinkTag>
-            </li>
+            {/* <li>
+              <LinkTag to="/">About</LinkTag>
+            </li> */}
           </NavListBox>
         </NavBox>
       </HeaderBox>
