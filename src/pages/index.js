@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import { palette } from '../components/common/GlobalStyles';
+import SEO from '../components/seo';
 
 const Container = styled.div`
   display: block;
@@ -64,6 +65,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <SEO title="Post" />
       <Container>
         <h1>Post</h1>
         <ol>

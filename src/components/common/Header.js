@@ -10,15 +10,18 @@ const HeaderBox = styled.header`
   position: sticky;
   left: 0;
   top: 0;
+  padding: 2rem;
   background-color: rgba(31, 41, 51, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
   a {
     font-size: 0.9rem;
   }
   @media screen and (min-width: 768px) {
-    padding: 2rem 4rem 4rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 900px;
   }
 `;
 const NavBox = styled.nav`

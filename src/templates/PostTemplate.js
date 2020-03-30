@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { palette } from '../components/common/GlobalStyles';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-dark.css';
+import Helmet from 'react-helmet';
 
 hljs.configure({
   languages: ['javascript', 'css', 'html', 'xml ', 'typescript'],
@@ -88,6 +89,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        description
       }
       html
     }
@@ -109,6 +111,40 @@ const PostTemplate = props => {
 
   return (
     <Layout>
+      <Helmet
+        title={props.data.markdownRemark.frontmatter.title}
+        meta={[
+          {
+            name: `description`,
+            content: props.data.markdownRemark.frontmatter.description,
+          },
+          {
+            property: `og:title`,
+            content: props.data.markdownRemark.frontmatter.title,
+          },
+          {
+            property: `og:description`,
+            content: props.data.markdownRemark.frontmatter.description,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+
+          {
+            name: `twitter:title`,
+            content: props.data.markdownRemark.frontmatter.title,
+          },
+          {
+            name: `twitter:description`,
+            content: props.data.markdownRemark.frontmatter.description,
+          },
+        ]}
+      />
       <Container>
         <PostTitle>{props.data.markdownRemark.frontmatter.title}</PostTitle>
         {/* <p>{props.data.markdownRemark.frontmatter.date}</p> */}
