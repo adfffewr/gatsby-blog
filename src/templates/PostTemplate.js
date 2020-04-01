@@ -27,23 +27,31 @@ const PostContent = styled.div`
   margin: 1.5rem 0;
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     color: ${palette.white};
     font-weight: bold;
   }
-  h1 {
-    font-size: 28px;
-  }
+  h1,
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
   }
   h3 {
-    font-size: 18px;
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
   }
   p {
     margin: 1.5em 0px;
     color: ${palette.white};
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  p a {
+    color: ${palette.green};
+  }
+  p a:hover {
+    text-decoration: underline;
   }
   strong {
     background: rgba(135, 131, 120, 0.15);
@@ -62,6 +70,10 @@ const PostContent = styled.div`
     list-style-position: inside;
     margin: 0px 0px 1.5em 2em;
   }
+  ul li {
+    color: ${palette.white};
+    font-size: 0.9rem;
+  }
   pre code {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
       'Courier New', monospace;
@@ -75,15 +87,6 @@ const PostContent = styled.div`
     border-radius: 4px;
   }
   @media screen and (min-width: 768px) {
-    h1 {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 28px;
-    }
-    h3 {
-      font-size: 22px;
-    }
     code,
     pre {
       font-size: 16px;
