@@ -61,7 +61,7 @@ const IndexPage = () => {
       }
     }
   `);
-  console.log(data);
+  // console.log(data);
 
   return (
     <Layout>

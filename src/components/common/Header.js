@@ -4,18 +4,20 @@ import styled from 'styled-components';
 import { palette } from './GlobalStyles';
 
 const HeaderBox = styled.header`
-  padding: 20px;
   width: 100%;
-  box-sizing: border-box;
   position: sticky;
   left: 0;
   top: 0;
-  padding: 2rem;
   background-color: rgba(47, 52, 55, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
+  z-index: 1000;
+`;
+const HeaderContent = styled.div`
+  padding: 2rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
+  box-sizing: border-box;
   @media screen and (min-width: 768px) {
     margin-top: 2rem;
     max-width: 900px;
@@ -26,9 +28,7 @@ const NavBox = styled.nav`
   align-items: center;
   justify-content: space-between;
 `;
-const Logo = styled(Link)`
-  color: ${palette.white};
-`;
+
 const LinkTag = styled(Link)`
   color: ${palette.green};
   transition: 0.2s;
@@ -55,19 +55,18 @@ const Header = () => {
   return (
     <>
       <HeaderBox>
-        <NavBox>
-          {/* <h1>
-            <Logo to="/">CodingPalette</Logo>
-          </h1> */}
-          <NavListBox>
-            <li>
-              <LinkTag to="/">Post</LinkTag>
-            </li>
-            {/* <li>
-              <LinkTag to="/">About</LinkTag>
-            </li> */}
-          </NavListBox>
-        </NavBox>
+        <HeaderContent>
+          <NavBox>
+            <NavListBox>
+              <li>
+                <LinkTag to="/">Post</LinkTag>
+              </li>
+              {/* <li>
+                <LinkTag to="/">About</LinkTag>
+              </li> */}
+            </NavListBox>
+          </NavBox>
+        </HeaderContent>
       </HeaderBox>
     </>
   );
