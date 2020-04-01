@@ -7,8 +7,8 @@ export const GlobalStyles = createGlobalStyle`
   @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 300; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype'); } 
   
   body {
-    background-color: #1f2933;
-    color: #f5f7fa;
+    background-color: rgb(47, 52, 55);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 15px;
     font-weight: 400;
     line-height: 1.65;
@@ -34,7 +34,7 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const palette = {
-  white: '#f5f7fa',
-  black: '#000',
-  green: '#00bfa6',
+  white: 'rgba(255, 255, 255, 0.9)',
+  black: 'rgb(55, 53, 47);',
+  green: 'rgb(77,171,154)',
 };

@@ -11,14 +11,11 @@ const HeaderBox = styled.header`
   left: 0;
   top: 0;
   padding: 2rem;
-  background-color: rgba(31, 41, 51, 0.8);
+  background-color: rgba(47, 52, 55, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  a {
-    font-size: 0.9rem;
-  }
   @media screen and (min-width: 768px) {
     margin-top: 2rem;
     max-width: 900px;
@@ -34,9 +31,14 @@ const Logo = styled(Link)`
 `;
 const LinkTag = styled(Link)`
   color: ${palette.green};
-  transition: color 0.2s;
+  transition: 0.2s;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
   &:hover {
     color: ${palette.white};
+    background-color: rgb(71, 78, 80);
   }
 `;
 const NavListBox = styled.ul`
