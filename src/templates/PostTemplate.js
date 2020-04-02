@@ -59,6 +59,7 @@ const PostContent = styled.div`
     border-radius: 3px;
     font-size: 85%;
     padding: 0.2em 0.4em;
+    letter-spacing: 2px;
   }
   img {
     display: block;

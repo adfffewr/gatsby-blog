@@ -12,7 +12,6 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: rgb(47, 52, 55);
     color: rgba(255, 255, 255, 0.9);
-    font-size: 15px;
     font-weight: 400;
     line-height: 1.65;
     font-family: 'NanumBarunGothic', sans-serif;
@@ -31,9 +30,6 @@ export const GlobalStyles = createGlobalStyle`
   @media screen and (min-width:768px) {
     html {
       font-size:18px;
-    }
-    body {
-      font-size: 18px;  
     }
   }
   
