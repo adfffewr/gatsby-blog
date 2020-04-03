@@ -109,7 +109,7 @@ export const query = graphql`
 `;
 
 const PostTemplate = props => {
-  console.log(props);
+  // console.log(props);
   const updataPre = () => {
     document.querySelectorAll('pre code').forEach(block => {
       hljs.highlightBlock(block);

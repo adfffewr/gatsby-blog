@@ -8,18 +8,20 @@ const HeaderBox = styled.header`
   position: sticky;
   left: 0;
   top: 0;
+  padding: 2rem;
+  margin-bottom: 2rem;
   background-color: rgba(47, 52, 55, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 1000;
-`;
-const HeaderContent = styled.div`
-  padding: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
   box-sizing: border-box;
   @media screen and (min-width: 768px) {
     margin-top: 2rem;
+  }
+`;
+const HeaderContent = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
     max-width: 900px;
   }
 `;
@@ -47,7 +49,7 @@ const NavListBox = styled.ul`
   align-items: center;
   justify-content: flex-end;
   li {
-    margin: 0 15px;
+    margin-left: 15px;
   }
 `;
 
