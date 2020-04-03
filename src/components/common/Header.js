@@ -61,9 +61,9 @@ const Header = () => {
               <li>
                 <LinkTag to="/">Post</LinkTag>
               </li>
-              {/* <li>
-                <LinkTag to="/">About</LinkTag>
-              </li> */}
+              <li>
+                <LinkTag to="/about">About</LinkTag>
+              </li>
             </NavListBox>
           </NavBox>
         </HeaderContent>
