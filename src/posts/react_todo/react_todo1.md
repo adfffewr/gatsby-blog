@@ -6,7 +6,7 @@ description: 'react를 이용하여 To Do List 를 만들어 보겠습니다. �
 
 ## React 프로젝트 만들기
 
-이 프로젝트는 벨로퍼트님의 멋진 투두리스트 만들기를 참고 하였습니다. https://react.vlpt.us/mashup-todolist/  
+이 프로젝트는 벨로퍼트님의 멋진 투두리스트 만들기를 따라 하였습니다. https://react.vlpt.us/mashup-todolist/  
 react를 이용하여 To Do List 를 만들어 보겠습니다.
 
 ### React 설치
