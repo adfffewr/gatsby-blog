@@ -1,8 +1,8 @@
----
+<!-- ---
 title: 리액트 To Do List 만들기(2)
 date: '2020-04-01'
 description: '이 프로젝트에는 5개의 컴포넌트를 만들겁니다. 만들기 전 각 컴포넌트의 역할을 알아보겠습니다.'
----
+--- -->
 
 ## 컴포넌트 만들기
 
@@ -115,7 +115,7 @@ const Title = styled.h1`
   color: #343a40;
 `;
 
-const Date = styled.div`
+const DateBox = styled.div`
   margin-top: 4px;
   color: #868e96;
   font-size: 21px;
@@ -133,7 +133,7 @@ const TodoHead = () => {
     <>
       <TodoHeadContainer>
         <Title>2020년 4월 1일</Title>
-        <Date>수요일</Date>
+        <DateBox>수요일</DateBox>
         <TasksList>할 일 2개 남음</TasksList>
       </TodoHeadContainer>
     </>

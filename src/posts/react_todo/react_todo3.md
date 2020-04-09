@@ -1,8 +1,8 @@
----
+<!-- ---
 title: 리액트 To Do List 만들기(3)
 date: '2020-04-05'
 description: 'src 폴더에 reducers 라는 폴더를 생성하고 그 안에 TodoContext.js 파일을 생성하고, 그 안에 useReducer 를 사용하여 생태관리하는 TodoProvider 라는 컴포넌트를 만들겠습니다.'
----
+--- -->
 
 ## 리듀서 만들기
 
@@ -327,7 +327,7 @@ const Title = styled.h1`
   color: #343a40;
 `;
 
-const Date = styled.div`
+const DateBox = styled.div`
   margin-top: 4px;
   color: #868e96;
   font-size: 21px;
@@ -347,7 +347,7 @@ const TodoHead = () => {
     <>
       <TodoHeadContainer>
         <Title>2020년 4월 1일</Title>
-        <Date>수요일</Date>
+        <DateBox>수요일</DateBox>
         <TasksList>할 일 2개 남음</TasksList>
       </TodoHeadContainer>
     </>
