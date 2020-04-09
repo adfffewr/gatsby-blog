@@ -18,11 +18,11 @@ $ npx create-react-app todolist
 ```
 
 해당 폴더에 들어가서 프로젝트에 필요한 라이브러리를 설치하겠습니다.
-이번 프로젝트에는 styled-components , styled-reset , react-icons 를 이용하겠습니다.
+이번 프로젝트에는 styled-components , styled-reset , react-icons , mobx , mobx-react 를 이용하겠습니다.
 
 ```
 $ cd todolist
-$ npm i styled-components styled-reset react-icons
+$ npm i styled-components styled-reset react-icons mobx , mobx-react
 ```
 
 설치 완료 후 터미널에서 **npm start** 를 하면 localhost:3000 열리면서 리액트 프로젝트가 실행 된 것을 확인 할 수 있습니다.
