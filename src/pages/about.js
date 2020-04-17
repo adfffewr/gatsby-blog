@@ -70,10 +70,10 @@ const AboutPage = () => {
               {`let me = {
   content : {
     name : '이성재'
-    email : 'adfffewr@naver.com'
+    email : 'codingpalette@gamile.com'
     pages : [
       'https://codingpalette.com',
-      'https://github.com/adfffewr'
+      'https://github.com/codingpalette'
     ]
   },
 

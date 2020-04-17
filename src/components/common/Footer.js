@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { palette } from './GlobalStyles';
-
-import { FaGithubSquare } from 'react-icons/fa';
 import { IoLogoGithub, IoMdMail } from 'react-icons/io';
 
 const FooterContainer = styled.footer`
@@ -32,10 +30,14 @@ const Footer = () => {
       <FooterContainer>
         <ul>
           <li>
-            <a href="mailto:adfffewr@naver.com">
+            <a href="mailto:codingpalette@gmail.com">
               <IoMdMail />
             </a>
-            <a href="https://github.com/adfffewr" target="_blank">
+            <a
+              href="https://github.com/codingpalette"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <IoLogoGithub />
             </a>
           </li>

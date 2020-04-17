@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import { palette } from '../components/common/GlobalStyles';
 import SEO from '../components/seo';
+import Pagination from '../components/post/Pagination';
 
 const Container = styled.div`
   display: block;
@@ -42,26 +43,8 @@ const Title = styled.h2`
 //   }
 // `;
 
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              date
-            }
-          }
-        }
-      }
-    }
-  `);
-  // console.log(data);
+const PostListTemplate = ({ data, pageContext }) => {
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
@@ -69,7 +52,7 @@ const IndexPage = () => {
       <Container>
         <h1>Post</h1>
         <ol>
-          {data.allMarkdownRemark.edges.map(edge => {
+          {posts.map(edge => {
             return (
               <List key={edge.node.id}>
                 <Link to={`/post/${edge.node.fields.slug}`}>
@@ -82,9 +65,33 @@ const IndexPage = () => {
             );
           })}
         </ol>
+        <Pagination data={pageContext} />
       </Container>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default PostListTemplate;
+
+export const query = graphql`
+  query($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date
+          }
+        }
+      }
+    }
+  }
+`;

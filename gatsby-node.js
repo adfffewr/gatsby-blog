@@ -7,6 +7,7 @@
 // You can delete this file if you're not using it
 
 const path = require('path');
+const { paginate } = require('gatsby-awesome-pagination');
 
 module.exports.onCreateNode = ({ node, actions }) => {
   // md 확장자를 찾아 slug를 만든다
@@ -26,7 +27,8 @@ module.exports.onCreateNode = ({ node, actions }) => {
 module.exports.createPages = async ({ actions, graphql }) => {
   // onCreateNode 로 만든 slug를 통해 페이즈를 만든다
   const { createPage } = actions;
-  const postTemplate = path.resolve('./src/templates/PostTemplate.js');
+  const postViewTemplate = path.resolve('./src/templates/PostViewTemplate.js');
+  const postListTemplate = path.resolve('./src/templates/PostListTemplate.js');
   const res = await graphql(`
     query {
       allMarkdownRemark {
@@ -41,9 +43,20 @@ module.exports.createPages = async ({ actions, graphql }) => {
     }
   `);
   // console.log(res);
-  res.data.allMarkdownRemark.edges.forEach(edge => {
+
+  const posts = res.data.allMarkdownRemark.edges;
+
+  paginate({
+    createPage, // The Gatsby `createPage` function
+    items: posts, // An array of objects
+    itemsPerPage: 10, // How many items you want per page
+    pathPrefix: '/', // Creates pages like `/blog`, `/blog/2`, etc
+    component: postListTemplate, // Just like `createPage()`
+  });
+
+  posts.map(edge => {
     createPage({
-      component: postTemplate,
+      component: postViewTemplate,
       path: `/post/${edge.node.fields.slug}`,
       context: {
         slug: edge.node.fields.slug,
