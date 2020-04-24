@@ -6,6 +6,7 @@ import { palette } from '../components/common/GlobalStyles';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-dark.css';
 import Helmet from 'react-helmet';
+import Utterances from '../components/post/Utterances';
 
 hljs.configure({
   languages: ['javascript', 'css', 'html', 'xml ', 'typescript'],
@@ -169,6 +170,7 @@ const PostTemplate = props => {
         <pre>{JSON.stringify(props, null, 4)}</pre>
       </code> */}
       </Container>
+      <Utterances repo="codingpalette/gatsby-blog" />
     </Layout>
   );
 };
