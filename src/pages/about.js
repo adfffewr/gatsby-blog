@@ -69,8 +69,8 @@ const AboutPage = () => {
             <code>
               {`let me = {
   content : {
-    name : '이성재'
-    email : 'codingpalette@gamile.com'
+    name : '이성재',
+    email : 'codingpalette@gamile.com',
     pages : [
       'https://codingpalette.com',
       'https://github.com/codingpalette'
@@ -87,7 +87,34 @@ const AboutPage = () => {
       'Svelte',
       'Sapper'
     ]
+  },
+
+  Backend : {
+    node : [
+      'Express',
+      'Sequelize',
+    ]
+  },
+
+  Project : {
+    '이움에스 동영상 렌더링 제작 페이지' : {
+      url : 'https://solution.studioium.com/',
+      content : '동영상 렌더링 제작 페이지 작업'
+    },
+    '고릴라 스페이스' : {
+      url : 'https://www.gorillaspace.co.kr/',
+      contnet : '홈페이지 퍼블리싱 작업'
+    },
+    '얼마나와' : {
+      url : 'https://www.olmanawa.com/',
+      contnet : '홈페이지 퍼블리싱 작업'
+    },
+    '스튜디오 이움 모바일 초대장' : {
+      url : 'https://www.studioium.com/main/',
+      contnet : '스튜디오 이움 모바일 초대장 제작 페이지 작업'
+    }
   }
+
 }
 `}
             </code>
