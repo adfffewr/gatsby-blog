@@ -109,7 +109,7 @@ export const query = graphql`
   }
 `;
 
-const PostTemplate = props => {
+const PostTemplate = React.memo(props => {
   // console.log(props);
   const updataPre = () => {
     document.querySelectorAll('pre code').forEach(block => {
@@ -173,6 +173,6 @@ const PostTemplate = props => {
       <Utterances repo="codingpalette/gatsby-blog" />
     </Layout>
   );
-};
+});
 
 export default PostTemplate;

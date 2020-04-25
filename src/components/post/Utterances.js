@@ -2,7 +2,7 @@ import React, { createRef, useLayoutEffect } from 'react';
 
 const src = 'https://utteranc.es/client.js';
 
-const Utterances = ({ repo }) => {
+const Utterances = React.memo(({ repo }) => {
   const containerRef = createRef('div');
   // console.log(repo);
   useLayoutEffect(() => {
@@ -23,10 +23,10 @@ const Utterances = ({ repo }) => {
     });
 
     containerRef.current.appendChild(utterances);
-  }, [repo, containerRef]);
+  }, [repo]);
 
   return <div ref={containerRef} />;
-};
+});
 
 Utterances.displayName = 'Utterances';
 

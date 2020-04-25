@@ -301,4 +301,4 @@ export default TodoCreate;
 onSubmit 을 하게 되면 todoStore.create 함수가 작동이 되고 todoStore 에서 todos 데이터를 추가 해 줍니다. 그리고 데이터가 변화가 되면 useObserver 이 감지를 하고 컴포넌트를 자동으로 업데이트 해줍니다.
 
 이것으로 이번 프로젝트의 모든 기능을 구현해 봤습니다.  
-완성된 프로젝트는 [바로가기](https://adfffewr.github.io/react-mobx-todo/) 에서 확인 하실 수 있습니다.
+완성된 프로젝트는 [바로가기](https://codingpalette.github.io/react-mobx-todo/) 에서 확인 하실 수 있습니다.
