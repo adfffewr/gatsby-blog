@@ -99,8 +99,6 @@ Header.js 에 있는 콘솔들은 주석 처리 해 주시고 이제 영화 리�
 ```
 // ItemList.js
 
-// ItemList.js
-
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -171,10 +169,10 @@ export default ItemList;
 
 ```
 
-위와 같이 작성하셨다면 **Home.js** 에서 불러와 보도록 하겠습니다.
+위와 같이 작성하셨다면 **containers** 폴더에 **HomePage.js** 파일을 만들어 주시고 아래와 같이 입력해 주세요.
 
 ```
-// Home.js
+// HomePage.js
 
 import React from 'react';
 import styled from 'styled-components';
@@ -198,7 +196,7 @@ const List = styled.li`
   }
 `;
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <ListBox>
@@ -222,14 +220,34 @@ const Home = () => {
   );
 };
 
+export default HomePage;
+
+```
+
+그 다음에 **Home.js** 를 아래오 같이 수정해 주세요.
+
+```
+// Home.js
+
+import React from 'react';
+import HomePage from '../containers/HomePage';
+
+const Home = () => {
+  return (
+    <>
+      <HomePage />
+    </>
+  );
+};
+
 export default Home;
 
 ```
 
-위와 같이 작성을 하고 화면을 확인해 보시면
+이제 화면을 확인하시면 아래 이미지 처럼 pc화면 mobile화면 모두 정상적으로 나오는 것을 확인 할 수 있습니다.
 
 ![react_movie_img11](./images/react_movie_img11.png)
 
 ![react_movie_img12](./images/react_movie_img12.png)
 
-위 이미지 처럼 pc화면 mobile화면 모두 정상적으로 나오는 것을 확인 할 수 있습니다. 이것으로 list 컴포넌트를 완성하였고 다음으로 데이터를 불러와 실제 영화 정보를 보여주도록 하겠습니다.
+이것으로 list 컴포넌트를 완성하였고 다음으로 데이터를 불러와 실제 영화 정보를 보여주도록 하겠습니다.
