@@ -19,7 +19,7 @@ export const movieGet = () => {
   return axios.get('/movie/now_playing', {
     params: {
       api_key: '받은 API 키를 입력해 주세요.',
-      language: 'en-US',
+      language: 'ko',
     },
   });
 };
