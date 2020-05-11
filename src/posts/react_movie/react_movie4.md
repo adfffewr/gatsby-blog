@@ -167,6 +167,6 @@ export default ItemList;
 
 ```
 
-![react_movie_img13](./images/react_movie_img13.png)
+![react_movie_img13](./images/react_movie_img13-1.png)
 
 위 이미지 처럼 영황의 제목과 이미지가 바뀌어 있고 리스트를 클릭하면 화면이 디테일 페이지로 바뀌고 url 이 '/movie/454626' 이런식으로 바뀌는 것을 확인 할 수 있습니다. 다음에는 영화의 디테일 페이지를 작업하도록 하겠습니다.

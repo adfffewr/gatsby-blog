@@ -221,4 +221,6 @@ export default withRouter(DetailPage);
 
 ```
 
-위와 같이 작성을 하셨다면 화면에서 제목과 영화에 대한 내용이 나타나게 됩니다.
+위와 같이 작성을 하셨다면 아래 이미지 처럼 화면에서 제목과 영화에 대한 내용이 나타나게 됩니다.
+
+![react_movie_img13](./images/react_movie_img14.png)
