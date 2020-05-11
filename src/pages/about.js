@@ -96,6 +96,11 @@ const AboutPage = () => {
     ]
   },
 
+  Database : {
+    RDBMS: ['MySQL'],
+    NoSQL: ['Firebase', 'MongoDB']
+  },
+
   Project : {
     '이움에스 동영상 렌더링 제작 페이지' : {
       url : 'https://solution.studioium.com/',
