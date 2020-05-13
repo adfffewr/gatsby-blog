@@ -43,7 +43,7 @@ const Title = styled.h2`
 //   }
 // `;
 
-const PostListTemplate = ({ data, pageContext }) => {
+const PortfolioListTeamplate = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
@@ -71,12 +71,12 @@ const PostListTemplate = ({ data, pageContext }) => {
   );
 };
 
-export default PostListTemplate;
+export default PortfolioListTeamplate;
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: "post" } } }
+      filter: { frontmatter: { category: { eq: "portfolio" } } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
