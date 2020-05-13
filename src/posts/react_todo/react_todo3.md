@@ -2,6 +2,7 @@
 title: 리액트 To Do List 만들기(3)
 date: '2020-04-05'
 description: 'src 폴더에 store 라는 폴더를 생성하고 그 안에 todoStore.js 파일을 생성하고, 그 안에 react-mobx 를 사용하여 생태관리를 하는 컴포넌트를 만들겠습니다.'
+category: 'post'
 ---
 
 ## 스토어 만들기

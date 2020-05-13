@@ -2,6 +2,7 @@
 title: 리액트 Movie App 만들기(4)
 date: '2020-04-26'
 description: '영화리스트를 불러오기 위해 axios 를 설치하고 axios를 통해 데이터를 불러오도록 하겠습니다. npm i axios 를 해주세요.'
+category: 'post'
 ---
 
 영화리스트를 불러오기 위해 axios 를 설치하고 axios를 통해 데이터를 불러오도록 하겠습니다. **npm i axios** 를 해주세요. 설치가 완료 됐으면 **src** 폴더안에 **api.js** 파일을 만들어 주세요. 영화의 데이터는 [바로가기](https://www.themoviedb.org/) 에서 회원가입을 하시고 프로필 설정 -> API 에서 API 키를 받을 수 있습니다.  
