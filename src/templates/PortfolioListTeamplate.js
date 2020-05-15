@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import { palette } from '../components/common/GlobalStyles';
 import SEO from '../components/seo';
 import Pagination from '../components/post/Pagination';
+import Img from 'gatsby-image';
 
 const Container = styled.div`
   display: block;
@@ -15,8 +16,29 @@ const Container = styled.div`
   }
 `;
 
+const ListBox = styled.ol`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 const List = styled.li`
-  & + li {
+  border-radius:3px;
+  overflow:hidden;
+  width:300px;
+  height:300px;
+  margin-bottom:28px;
+  a{
+    display:block;
+    width:100%;
+    height:100%;
+    /* padding:1.25rem; */
+    background: rgb(63, 68, 71);
+    box-sizing:border-box;
+    color:${palette.white};
+  }
+  /* & + li {
     margin-top: 1.5rem;
   }
   a {
@@ -24,7 +46,7 @@ const List = styled.li`
   }
   a:hover {
     color: ${palette.green};
-  }
+  } */
 `;
 const Date = styled.time`
   font-size: 0.8rem;
@@ -48,23 +70,25 @@ const PortfolioListTeamplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Post" />
+      <SEO title="Portfolio" />
       <Container>
-        <h1>Post</h1>
-        <ol>
+        <h1>Portfolio</h1>
+        <ListBox>
           {posts.map(edge => {
             return (
               <List key={edge.node.id}>
-                <Link to={`/post/${edge.node.fields.slug}`}>
-                  <Date datetime={edge.node.frontmatter.date}>
-                    {edge.node.frontmatter.date}
-                  </Date>
+                <Link to={`/portfolio/${edge.node.fields.slug}`}>
+                  <Img
+                    fluid={
+                      edge.node.frontmatter.featuredImage.childImageSharp.fluid
+                    }
+                  />
                   <Title>{edge.node.frontmatter.title}</Title>
                 </Link>
               </List>
             );
           })}
-        </ol>
+        </ListBox>
         <Pagination data={pageContext} />
       </Container>
     </Layout>
@@ -90,6 +114,14 @@ export const query = graphql`
           frontmatter {
             title
             date
+            description
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
