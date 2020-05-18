@@ -5,6 +5,8 @@ description: '디테일 페이지를 만들어 주도록 하겠습니다. contai
 category: 'post'
 ---
 
+## 디테일 페이지 만들기
+
 디테일 페이지를 만들어 주도록 하겠습니다. containers 폴더에 **DetailPage.js** 파일을 만들어 주고 아래와 같이 입력해 주세요.
 
 ```
