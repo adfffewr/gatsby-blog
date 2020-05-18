@@ -109,7 +109,7 @@ export const query = graphql`
   }
 `;
 
-const PortfolioTemplate = React.memo(props => {
+const PortfolioViewTemplate = React.memo(props => {
   // console.log(props);
   const updataPre = () => {
     document.querySelectorAll('pre code').forEach(block => {
@@ -175,4 +175,4 @@ const PortfolioTemplate = React.memo(props => {
   );
 });
 
-export default PortfolioTemplate;
+export default PortfolioViewTemplate;

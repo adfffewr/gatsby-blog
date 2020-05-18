@@ -2,7 +2,7 @@
 title: 리액트 Movie App 만들기(2)
 date: '2020-04-21'
 description: '컴포넌트를 만들기 전 라우터 설정을 하도록 하겠습니다. 제가 만들 Movie App 에서는 3개의 페이지를 만들어 줄 것이며 그 설정을 하도록 하겠습니다.'
-category: 'post'
+category: 'blog'
 ---
 
 ## 라우터 설정

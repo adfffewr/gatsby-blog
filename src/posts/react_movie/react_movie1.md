@@ -2,7 +2,7 @@
 title: 리액트 Movie App 만들기(1)
 date: '2020-04-16'
 description: 'react를 이용하여 영화 앱 만들기를 해보겠습니다. npx create-react-app react-movie-app 으로 프로젝트를 생성해 주세요.'
-category: 'post'
+category: 'blog'
 ---
 
 ## React 프로젝트 만들기

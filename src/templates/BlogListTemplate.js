@@ -43,19 +43,19 @@ const Title = styled.h2`
 //   }
 // `;
 
-const PostListTemplate = ({ data, pageContext }) => {
-  const posts = data.allMarkdownRemark.edges;
+const BlogListTemplate = ({ data, pageContext }) => {
+  const blogs = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
-      <SEO title="Post" />
+      <SEO title="Blog" />
       <Container>
-        <h1>Post</h1>
+        <h1>Blog</h1>
         <ol>
-          {posts.map(edge => {
+          {blogs.map(edge => {
             return (
               <List key={edge.node.id}>
-                <Link to={`/post/${edge.node.fields.slug}`}>
+                <Link to={`/blog/${edge.node.fields.slug}`}>
                   <Date datetime={edge.node.frontmatter.date}>
                     {edge.node.frontmatter.date}
                   </Date>
@@ -71,12 +71,12 @@ const PostListTemplate = ({ data, pageContext }) => {
   );
 };
 
-export default PostListTemplate;
+export default BlogListTemplate;
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: "post" } } }
+      filter: { frontmatter: { category: { eq: "blog" } } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip

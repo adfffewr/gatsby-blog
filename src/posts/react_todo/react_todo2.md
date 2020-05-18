@@ -2,7 +2,7 @@
 title: 리액트 To Do List 만들기(2)
 date: '2020-04-01'
 description: '이 프로젝트에는 5개의 컴포넌트를 만들겁니다. 만들기 전 각 컴포넌트의 역할을 알아보겠습니다.'
-category: 'post'
+category: 'blog'
 ---
 
 ## 컴포넌트 만들기

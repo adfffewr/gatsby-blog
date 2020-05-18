@@ -29,6 +29,10 @@ const List = styled.li`
   width:300px;
   height:300px;
   margin-bottom:28px;
+  transition:0.2s;
+  &:hover{
+    transform:translateY(-5px);
+  }
   a{
     display:block;
     width:100%;
@@ -37,7 +41,9 @@ const List = styled.li`
     background: rgb(63, 68, 71);
     box-sizing:border-box;
     color:${palette.white};
+    
   }
+  
   /* & + li {
     margin-top: 1.5rem;
   }

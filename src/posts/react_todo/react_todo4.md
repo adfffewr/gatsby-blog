@@ -2,7 +2,7 @@
 title: 리액트 To Do List 만들기(4)
 date: '2020-04-09'
 description: 'Context 를 만들었으니 이제 Context 와 연동하여 기능을 구현 하도록 하겠습니다. Context 에 있는 state 를 받아와서 렌더링을 하고, 필요한 상황에는 특정 액션을 dispatch 하면 됩니다.'
-category: 'post'
+category: 'blog'
 ---
 
 ## 기능 구현하기

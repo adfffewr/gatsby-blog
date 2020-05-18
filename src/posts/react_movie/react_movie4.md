@@ -2,7 +2,7 @@
 title: 리액트 Movie App 만들기(4)
 date: '2020-04-26'
 description: '영화리스트를 불러오기 위해 axios 를 설치하고 axios를 통해 데이터를 불러오도록 하겠습니다. npm i axios 를 해주세요.'
-category: 'post'
+category: 'blog'
 ---
 
 ## axios API 만들기

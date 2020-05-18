@@ -2,7 +2,7 @@
 title: 리액트 To Do List 만들기(1)
 date: '2020-03-30'
 description: 'react를 이용하여 To Do List 를 만들어 보겠습니다. 우선 터미널을 열고 프로젝트 작업공간으로 이동 후 create-react-app 을 사용하여 새로운 프로젝트를 만들어줍니다.'
-category: 'post'
+category: 'blog'
 ---
 
 ## React 프로젝트 만들기

@@ -2,7 +2,7 @@
 title: 리액트 Movie App 만들기(6)
 date: '2020-04-28'
 description: '이제 검색 페이지를 만들어 보도록 하겠습니다. 페이지를 만들기 전 우선 API 작업을 하다록 하겠습니다. api.js 파일을 아래와 같이 수정해 주세요.'
-category: 'post'
+category: 'blog'
 ---
 
 ## API 작업

@@ -61,7 +61,7 @@ const Header = () => {
           <NavBox>
             <NavListBox>
               <li>
-                <LinkTag to="/">Post</LinkTag>
+                <LinkTag to="/">Blog</LinkTag>
               </li>
               {/* <li>
                 <LinkTag to="/portfolio">Portfolio</LinkTag>

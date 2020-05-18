@@ -2,7 +2,7 @@
 title: 리액트 Movie App 만들기(3)
 date: '2020-04-25'
 description: 'list 컴포넌트를 만들기 전에 header 컴포넌트를 조금 수정하도록 하겠습니다. 수정할 내용은 url 이 header의 이름과 같다고 하면 해당 li 의 색을 변하도록 만들겠습니다.'
-category: 'post'
+category: 'blog'
 ---
 
 ## 리스트 컴포넌트 만들기

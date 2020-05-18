@@ -109,7 +109,7 @@ export const query = graphql`
   }
 `;
 
-const PostTemplate = React.memo(props => {
+const BlogTemplate = React.memo(props => {
   // console.log(props);
   const updataPre = () => {
     document.querySelectorAll('pre code').forEach(block => {
@@ -175,4 +175,4 @@ const PostTemplate = React.memo(props => {
   );
 });
 
-export default PostTemplate;
+export default BlogTemplate;
