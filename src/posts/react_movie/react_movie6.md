@@ -20,7 +20,7 @@ export const movieGet = () => {
   // 서버에 요청을 보냄
   return axios.get('/movie/now_playing', {
     params: {
-      api_key: 'a992d1fae6c06b990f53908e421ee199',
+      api_key: '받은 API 키를 입력해 주세요.',
       language: 'ko',
     },
   });
@@ -29,7 +29,7 @@ export const movieGet = () => {
 export const detailGet = (id) => {
   return axios.get(`/movie/${id}`, {
     params: {
-      api_key: 'a992d1fae6c06b990f53908e421ee199',
+      api_key: '받은 API 키를 입력해 주세요.',
       language: 'ko',
     },
   });
@@ -38,7 +38,7 @@ export const detailGet = (id) => {
 export const movieSearch = (text) => {
   return axios.get(`/search/movie`, {
     params: {
-      api_key: 'a992d1fae6c06b990f53908e421ee199',
+      api_key: '받은 API 키를 입력해 주세요.',
       language: 'ko',
       query: encodeURIComponent(text),
     },
